@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Arthur Gonçalves Barboza 
+      N075.807.059-40
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +10,30 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Arthur GonçalvesBarboza</ion-title>
     </ion-toolbar>
   </ion-header>
+ 
+  <ion-card>
+    <ion-card-header>
+     
+      
+      <p> Byte <ion-input type = "number" placeholder ="Informe um valor" [(ngModel)] = "valorB"> </ion-input> <ion-button (click) = "calculaB(valorB)"> Converter </ion-button></p>
+      <p> KB <ion-input type = "number" placeholder ="Informe um valor" [(ngModel)] = "valorKB"> </ion-input> <ion-button (click) = "calculaKB(valorKB)"> Converter </ion-button></p>
+      <p> MB <ion-input type = "number" placeholder ="Informe um valor" [(ngModel)] = "valorMB"> </ion-input> <ion-button (click) = "calculaMB(valorMB)"> Converter </ion-button></p>
+      <p> GB <ion-input type = "number" placeholder ="Informe um valor" [(ngModel)] = "valorGB"> </ion-input> <ion-button (click) = "calculaGB(valorGB)"> Converter </ion-button></p>
+      
+    </ion-card-header>
+  
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card> 
+    <p> Byte : {{(valorB)}} </p>
+    <p> KB : {{valorKB}} </p>
+    <p> MB : {{valorMB}} </p>
+    <p> GB : {{valorGB}} </p>
+    
+
+  </ion-card>  
+
 </ion-content>

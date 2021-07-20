@@ -21,6 +21,7 @@ export class HomePage {
 
   calculaB(valor){
     this.valorB = valor
+    this.valorSaidaB = this.valorB
     this.valorSaidaKB = this.valorB / 1024
     this.valorSaidaMB = this.valorB / (1024 **2) 
     this.valorSaidaGB = this.valorB / (1024 **3)
@@ -28,6 +29,7 @@ export class HomePage {
 
   calculaKB(valor){
     this.valorKB = valor
+    this.valorSaidaKB = this.valorKB
     this.valorSaidaB = this.valorKB * 1024
     this.valorSaidaMB = this.valorKB / 1024 
     this.valorSaidaGB = this.valorKB / (1024 **2)
@@ -35,6 +37,7 @@ export class HomePage {
 
   calculaMB(valor){
     this.valorMB = valor
+    this.valorSaidaMB = this.valorMB
     this.valorSaidaKB = this.valorMB * 1024
     this.valorSaidaB = this.valorMB * (1024 **2) 
     this.valorSaidaGB = this.valorMB / 1024
@@ -42,6 +45,7 @@ export class HomePage {
 
   calculaGB(valor){
     this.valorGB = valor
+    this.valorSaidaGB = this.valorGB
     this.valorSaidaKB = this.valorGB * (1024**2)
     this.valorSaidaMB = this.valorGB * 1024  
     this.valorSaidaB = this.valorGB * (1024 **3)
